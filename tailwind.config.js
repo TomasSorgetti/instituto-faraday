@@ -6,6 +6,10 @@ export default {
       colors: {
         primary: "#232424",
       },
+      fontFamily: {
+        poppins: ["Poppins"],
+        roboto: ["Roboto"],
+      },
     },
   },
   plugins: [],
