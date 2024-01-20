@@ -30,7 +30,7 @@ const Navigation = () => {
       </button>
       <ul
         className={`h-screen w-full opacity-0 fixed left-full duration-300 ease-in md:static top bg-primary text-white top-24 flex flex-col justify-center items-center gap-20 md:gap-12 md:flex-row md:h-auto md:p-0 md:justify-end md:opacity-100
-          ${active ? "opacity-100 left-0 duration-300 ease-in" : " "}
+          ${active ? "opacity-100 left-[0px] duration-300 ease-in" : " "}
         `}
       >
         <li className="" onClick={() => setActive(false)}>

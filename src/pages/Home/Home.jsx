@@ -8,37 +8,41 @@ const Home = () => {
   return (
     <div className="font-roboto bg-primary text-white">
       <Navigation />
-      <main className="w-11/12 m-auto">
-        <header className="w-full h-[700px] pt-28 flex justify-between">
-          <div className="w-full h-full pb-16 flex flex-col justify-between">
-            <div className="flex flex-col gap-8">
+      <main className="w-11/12 m-auto xl:w-9/12 2xl:w-8/12 4xl:w-7/12">
+        <header className="w-full pt-28 flex flex-col lg:flex-row lg:justify-between lg:h-[610px]">
+          <div className="w-full pb-16 flex flex-col gap-4 lg:justify-between ">
+            <div className="flex flex-col gap-4 w-full text-center lg:text-left">
               <h1 className="uppercase text-[2.5rem] lg:text-[4rem] font-bold font-poppins">
                 curso online
               </h1>
               <span className="uppercase text-[1.5rem] lg:text-[1.75rem]">
                 fullstack developer
               </span>
-              <p className="">
+              <p className="xl:w-11/12">
                 Estudia remoto desde cualquier lugar del mundo ! El futuro es
                 hoy, te brindamos un curso para que puedas aprender la
                 tecnologia que toda empresa busca !
               </p>
             </div>
-            <div className="w-full flex flex-col-reverse items-center lg:justify-between lg:pr-10">
+            <div className="w-full flex items-center justify-center lg:flex-row lg:justify-between lg:pr-10">
               <Link className="bg-white text-center px-6 py-2 text-black rounded font-bold">
                 Más información
               </Link>
-              <img src={arrow} alt="arrow image" />
+              <img
+                className="hidden lg:block w-[300px]"
+                src={arrow}
+                alt="arrow image"
+              />
             </div>
           </div>
           <img
-            className="hidden h-full"
+            className="h-[300px] sm:h-[400px] md:h-[500px] object-cover"
             src={headerImg}
             alt="person using a computer"
           />
         </header>
-        <section className="flex flex-col gap-32 items-center text-center pb-32">
-          <h2 className="font-poppins font-bold text-[1.75rem] w-4/12">
+        <section className="flex flex-col gap-10 items-center text-center py-24">
+          <h2 className="font-poppins font-bold text-[1.75rem] w-full">
             La pérdida de tiempo es una epidemia. Estamos acá para erradicarla.
           </h2>
           <article className="flex justify-center flex-col gap-2 lg:flex-row">
